@@ -1,0 +1,45 @@
+<head>
+    <title>Circuit Maker</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.7.1/svg.js"></script>
+
+    <script src="js/myscripts.js"></script>
+    <script src="js/workbench.js"></script>
+    <script src="js/part.js"></script>
+    <script src="js/point.js"></script>
+    <script src="js/node.js"></script>
+    <script src="js/box.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onresize="workbench.redraw()">
+    <div id='main'>
+        <div id='viewport'> </div>
+        <div id='menu'> </div>
+        <div id='options'> </div>
+        <div id='items'> </div>
+        <div id='info'> </div>
+    </div>
+</body>
+
+<script>
+    createWorkbench()
+    var vx = workbench.getViewX()
+    var vy = workbench.getViewY()
+
+    var vp = PointBuilder(vx, vy)
+        .setColor('red')
+        .setLabel('viewport center point')
+        .setDraggable(false)
+        .setVisibility(true)
+        .build()
+    var p1 = PointBuilder(vx + 50, vy)
+        .setColor('#bada55')
+        .setOpacity(0.75)
+        .setLabel('point 1')
+        .setVisibility(true)
+        .build()
+    var b1 = BoxBuilder(25, 20, vx - 50, vy)
+        .setColor('#f58f2f')
+        .build()
+</script>

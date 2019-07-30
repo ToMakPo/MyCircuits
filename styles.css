@@ -1,0 +1,84 @@
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+#main * {
+    box-sizing: border-box;
+    background-color: #BBB;
+}
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    border-bottom: 5px ridge #CCC;
+}
+#info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10em;
+    border-top: 5px ridge #CCC;
+}
+#options {
+    position: absolute;
+    top: 3em;
+    left: 0;
+    width: 20em;
+    height: calc(100vh - 13em);
+    border-right: 5px ridge #CCC;
+}
+#items {
+    position: absolute;
+    top: 3em;
+    right: 0;
+    width: 15em;
+    height: calc(100vh - 13em);
+    border-left: 5px ridge #CCC;
+}
+#viewport {
+    position: absolute;
+    top: 3em;
+    left: 20em;
+    width: calc(100vw - 20em - 15em);
+    height: calc(100vh - 13em);
+}
+#canvas {
+    background-color: #888;
+}
+
+svg text{
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.part .asset {
+    cursor: pointer;
+}
+
+.part .asset:hover {
+    opacity: 0.5;
+}
+
+.arrow:hover {
+    fill: #aaa;
+}
+
+.button:hover {
+    fill: #aaa;
+}
+
+.draggable {
+    cursor: move;
+}

@@ -1,5 +1,5 @@
-2019.07.30	Got the repository set up and added the files I've been working on. As of right now, the 
-			project is still in the very early stages and is not ready to be used.
-2019.07.31	Made improvements to the zoom in and out options and the move viewport buttons. 
-				... Added a dropdown option to select which zoom percentage to use. 
-				... The move viewport buttons are now anchored onto the edges when window is resized.
+2019.07.30 - Got the repository set up and added the files I've been working on. As of right now, the 
+             project is still in the very early stages and is not ready to be used.
+2019.07.31 - Made improvements to the zoom in and out options and the move viewport buttons. 
+                ... Added a dropdown option to select which zoom percentage to use. 
+                ... The move viewport buttons are now anchored onto the edges when window is resized.

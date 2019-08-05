@@ -29,7 +29,8 @@
     position: absolute;
     top: 3em;
     left: 0;
-    width: 20em;
+    width: 2em;
+    /*width: 20em;*/
     height: calc(100vh - 13em);
     border-right: 5px ridge #CCC;
 }
@@ -37,15 +38,18 @@
     position: absolute;
     top: 3em;
     right: 0;
-    width: 15em;
+    width: 1em;
+    /*width: 15em;*/
     height: calc(100vh - 13em);
     border-left: 5px ridge #CCC;
 }
 #viewport {
     position: absolute;
     top: 3em;
-    left: 20em;
-    width: calc(100vw - 20em - 15em);
+    left: 2em;
+    /*left: 20em;*/
+    width: calc(100vw - 2em - 1em);
+    /*width: calc(100vw - 20em - 15em);*/
     height: calc(100vh - 13em);
 }
 #canvas {
@@ -76,5 +80,9 @@ svg text{
 }
 
 .draggable {
+    cursor: move;
+}
+
+.handle {
     cursor: move;
 }

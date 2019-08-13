@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 3em;
+    height: .3em;
     border-bottom: 5px ridge #CCC;
 }
 #info {
@@ -22,35 +22,31 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 10em;
+    height: .10em;
     border-top: 5px ridge #CCC;
 }
 #options {
     position: absolute;
-    top: 3em;
+    top: .3em;
     left: 0;
-    width: 2em;
-    /*width: 20em;*/
-    height: calc(100vh - 13em);
+    width: .20em;
+    height: calc(100vh - .10em - .3em);
     border-right: 5px ridge #CCC;
 }
 #items {
     position: absolute;
-    top: 3em;
+    top: .3em;
     right: 0;
-    width: 1em;
-    /*width: 15em;*/
-    height: calc(100vh - 13em);
+    width: .15em;
+    height: calc(100vh - .10em - .3em);
     border-left: 5px ridge #CCC;
 }
 #viewport {
     position: absolute;
-    top: 3em;
-    left: 2em;
-    /*left: 20em;*/
-    width: calc(100vw - 2em - 1em);
-    /*width: calc(100vw - 20em - 15em);*/
-    height: calc(100vh - 13em);
+    top: .3em;
+    left: .20em;
+    width: calc(100vw - .20em - .15em);
+    height: calc(100vh - 1.3em);
 }
 #canvas {
     background-color: #888;
@@ -67,11 +63,11 @@ svg text{
     cursor: pointer;
 }
 
-.part .asset {
+.component .item {
     cursor: pointer;
 }
 
-.part .asset:hover {
+.component .item:hover {
     opacity: 0.5;
 }
 
